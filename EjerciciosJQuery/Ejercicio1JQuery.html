@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejemplo del efecto de ocultar de JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function(){
+              //Escondemos párrafos
+              $(".hide-btn").click(function(){
+                  $("p.intro").hide();
+                  $(".hide-btn").hide();
+              });
+          });
+    </script>
+  </head>
+  <body>
+    <h2 class="intro">Método hide().</h2>
+    <p class="intro">Texto de prueba.</p>
+    <p>Otro texto de prueba.</p>
+    <button type="button" class="hide-btn">Ocultar</button>
+  </body>
+</html>

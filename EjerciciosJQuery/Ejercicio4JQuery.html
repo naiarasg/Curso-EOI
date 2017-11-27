@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dos enlaces y dos botones. Un enlace se tiene que abrir en una nueva ventana y el otro no.</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function(){
+              $(".btn-one").click(function(){
+                  $("a").attr('href', 'target', '_blank');
+                  $("a[target='_blank']").hide();
+              });
+
+              $(".btn-two").click(function(){
+                  $("a").attr('href', 'target', '_self');
+                  $("a[target!='_blank']").hide();
+              });
+          });
+    </script>
+  </head>
+  <body>
+    <a href="https://www.ua.es/" target="_blank">Universidad de Alicante</a>
+    <a href="https://www.murcialanparty.com/" target="_self">MurciaLanParty 2017</a>
+    <button type="button" class="btn-one">Ocultar el primer enlace</button>
+    <button type="button" class="btn-two">Ocultar el segundo enlace</button>
+  </body>
+</html>

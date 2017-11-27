@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Selecciona el primer elemento de la primera lista y oculta dicho elemento</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("li:first").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+       <ul>
+        <li>Plátano</li>
+        <li>Manzana</li>
+        <li>Pera</li>
+       </ul>
+       <ul>
+        <li>Naranja</li>
+        <li>Melón</li>
+        <li>Fresa</li>
+       </ul>
+       <ul>
+        <li>Uva</li>
+        <li>Frambuesa</li>
+        <li>Arándano</li>
+       </ul>
+    </body>
+    <button type="button">Oculta el primer elemento</button>
+</html>
