@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Programa que nos muestra el día de la semana en el que estamos</title>
+    </head>
+<body>
+    <h2>JavaScript getDay() Method</h2>
+    <p>Día de la semana:</p>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Domingo";
+            weekday[1] = "Lunes";
+            weekday[2] = "Martes";
+            weekday[3] = "Miércoles";
+            weekday[4] = "Jueves";
+            weekday[5] = "Viernes";
+            weekday[6] = "Sábado";
+
+            var n = weekday[d.getDay()];
+            document.getElementById("demo").innerHTML = n;
+        }
+    </script>
+    <button onclick="myFunction()">Click aquí</button>
+</body>
+</html>

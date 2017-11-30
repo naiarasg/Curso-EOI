@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Condicionales</title>
+    </head>
+<body>
+    <p>Programa que nos muestra los 100 primeros números.</p>
+    <button onclick="myFunction()">Click aquí</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var numeros = "";
+            var i;
+            for (i = 0; i <= 100; i++) {
+            numeros += "El número es " + i + "<br>";
+            }
+        document.getElementById("demo").innerHTML = numeros;
+        }
+    </script>
+</body>
+</html>

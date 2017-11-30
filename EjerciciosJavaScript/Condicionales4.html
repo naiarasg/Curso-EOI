@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Condicionales</title>
+    </head>
+<body>
+    <p>Introduce una nota entre 1 y 10:</p>
+    <p><input id="myInput" type="text"> puntos</p>
+    <button onclick="myFunction()">Click aquí</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var nota = document.getElementById("myInput").value;
+            if (isNaN(nota) || nota > 10) {
+                alert("Input not valid");
+            } else if (nota < 5) {
+                alert("Has suspendido.");
+            } else if (nota == 5) {
+                alert("Has sacado un suficiente.");
+            } else if (nota == 6) {
+                alert("Has sacado un bien.");
+            } else if (nota == 7 || nota == 8) {
+                alert("Has sacado un notable.");
+            } else if (nota == 9) {
+                alert("Has sacado un sobresaliente.");
+            } else {
+                alert("Has sacado una matrícula de honor.")
+            }
+        }
+    </script>
+</body>
+</html>

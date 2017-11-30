@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Condicionales</title>
+    </head>
+<body>
+    <p>Introduce una hora entre 1 y 24:</p>
+    <p><input id="myInput" type="text"> horas</p>
+    <button onclick="myFunction()">Click aquí</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var time = document.getElementById("myInput").value;
+            if (isNaN(time) || time < 1 || time > 24) {
+                alert("Input not valid");
+            } else if (time < 12) {
+                alert("¡Buenos días!");
+            } else {
+                alert("¡Buenas tardes!");
+            }
+        }
+    </script>
+</body>
+</html>

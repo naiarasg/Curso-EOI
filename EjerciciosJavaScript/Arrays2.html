@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Arrays</title>
+    </head>
+<body>
+    <h2>JavaScript Array push() Method</h2>
+    <p>Días de la semana:</p>
+    <p id="demo"></p>
+
+    <script>
+        var days = ["Lunes", "Martes", "Miércoles"];
+        document.getElementById("demo").innerHTML = days;
+
+        function myFunction() {
+            days.push("Jueves","Viernes","Sábado","Domingo");
+            document.getElementById("demo").innerHTML = days;
+        }
+    </script>
+    <button onclick="myFunction()">Click aquí</button>
+</body>
+</html>

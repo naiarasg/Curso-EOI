@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio 2 de Avanzados: Variables</title>
+    </head>
+<body>
+    <p>Introduzca su nombre y apellidos:</p>
+    <p><input id="myInput" type="text"></p>
+    <button onclick="myFunction()">Click aquí</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var name = document.getElementById("myInput").value;
+            document.getElementById("demo").innerHTML = name;
+        }
+    </script>
+</body>
+</html>
