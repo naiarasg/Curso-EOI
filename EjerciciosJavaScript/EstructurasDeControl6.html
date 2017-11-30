@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Estructuras de control</title>
+    </head>
+<body>
+    <p>Programa que muestra al usuario los nombres de los doce meses del año.</p>
+    <button onclick="myFunction()">Click aquí</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+            "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            var text = "";
+            var i;
+            for (i = 0; i < months.length; i++) {
+                text += months[i] + " ";
+            }
+            alert(text);
+        }
+    </script>
+</body>
+</html>
