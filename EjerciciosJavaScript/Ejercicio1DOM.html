@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>DOM css() Method</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".button1").click(function(){
+                    $("#background").css("background-color", "red");
+                });
+
+                $(".button2").click(function(){
+                    $("#background").css("background-color", "green");
+                });
+
+                $(".button3").click(function(){
+                    $("#background").css("background-color", "blue");
+                });
+
+                $(".button4").click(function(){
+                    $("#background").css("background-color", "yellow");
+                });
+
+                $(".button5").click(function(){
+                    $("#background").css("background-color", "black");
+                });
+            });
+        </script>
+    </head>
+<body id="background">
+    <p>Pulsa los botones para cambiar el color de fondo de la página.</p>
+    <input type="button" style="border-color: red;" class="button1" value="Rojo">
+    <input type="button" style="border-color: green;" class="button2" value="Verde">
+    <input type="button" style="border-color: blue;" class="button3" value="Azul">
+    <input type="button" style="border-color: yellow;" class="button4" value="Amarillo">
+    <input type="button" style="border-color: black;" class="button5" value="Negro">
+</body>
+</html>
